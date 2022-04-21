@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+
+#include <math.h>
+void main()
+{  
+float lado1,lado2,lado3;
+    printf("digite o lado 1 do triangulo: ");
+    scanf("%f ", &lado1);
+    printf("digite o lado 2 do triangulo: ");
+    scanf("%f", &lado2);
+    printf("digite o lado 3 do triangulo: ");
+    scanf("%f ", &lado3);
+    if(lado1 + lado2 > lado3 && lado2 + lado3 > lado1 && lado1 + lado3 > lado2 ){
+        if( lado1 == lado2 == lado3){
+            printf("é um triangulo equilatero");
+        }
+        else if( lado1 == lado2 != lado3 ||  lado1 == lado3 != lado2 ||  lado2 == lado3 != lado1){
+            printf("é um triangulo isóceles");
+            
+        }else{
+          printf("triangulo escaleno");}
+    }else{
+    printf("não é um triangulo ");}
+    
+}
+  
