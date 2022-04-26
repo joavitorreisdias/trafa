@@ -32,18 +32,18 @@ float lado1,lado2,lado3;
 #include <stdlib.h>
 
 
-#include <math.h>
+
 void main()
 {
-char ch;
-printf("\nDigite um caracter (digite s para sair): ");
-  ch=getchar();
-  if(ch!= 's'){
+char letra;
+printf("digite uma letra ");
+  letra =getchar();  //recebe a letra digitada
+  if(letra != 's'){  //se ela não for s entra no loop
     do {
-    printf("\nO caracter digitado e %c", ch);
-    printf("\n Digite outro caracter (digite s para     sair): ");
-    ch=getchar();
-    }while (ch!= 's');}
-printf("\nSaindo do loop\n");
+    printf("O caracter digitado e %c \n", letra);
+    printf(" Digite outra letra: ");
+    letra =getchar();
+    }while (letra!= 's');} // loop vai continuar enquanto s não for digitada
+printf(" a letra s foi digitada\n"); // avisa que saiu do loop
 }
   
